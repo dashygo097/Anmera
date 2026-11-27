@@ -1,14 +1,3 @@
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.4.21")
-    }
-}
-
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -40,7 +29,7 @@ tasks.withType<Test>().configureEach {
 }
 
 dependencies {
-    // implementation(project(":anmera"))
+    implementation(project(":anmera"))
 
     testImplementation(libs.junit.jupiter)
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")

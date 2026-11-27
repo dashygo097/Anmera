@@ -21,6 +21,7 @@ dependencyResolutionManagement {
 rootProject.name = "Anmera"
 
 // Libraries
+include("anmera")
 
 // Samplers
 include("samples:hello")
